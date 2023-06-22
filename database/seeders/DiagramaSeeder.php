@@ -20,7 +20,7 @@ class DiagramaSeeder extends Seeder
         ]);
 
         Diagrama::create([
-            'name' => 'Diagrama 2',
+            'name' => 'DB-Veterinaria',
         ]);
 
         Diagrama::create([

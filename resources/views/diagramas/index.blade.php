@@ -92,7 +92,7 @@
                                                 @method('DELETE')
                                             </form>
                                         @endcan
-                                        <a href="{{ url('http://localhost:3000') }}" class="btn btn-warning"><i
+                                        <a href="{{ url('https://diagramador-5ba3c.web.app/') }}" class="btn btn-warning"><i
                                                 class="fas fa-plus"></i> <i class="fas fa-square"></i></a>
                                         <a href="{{ route('equipos.show', $diagrama->id) }}" class="btn btn-primary"><i
                                                 class="fas fa-user-plus"></i></a>
