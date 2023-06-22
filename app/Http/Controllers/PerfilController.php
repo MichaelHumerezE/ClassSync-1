@@ -11,17 +11,8 @@ class PerfilController extends Controller
     public function index(Request $request)
     {
         if (auth()->user()) {
-            $TipoC = auth()->user()->tipoc;
-            $TipoE = auth()->user()->tipoe;
-            if ($TipoC == 1) {
-                return view('inicio')->with('message', 'Se ha actualizado los datos correctamente.');
-            } else {
-                if ($TipoE == 1) {
-                    return view('home.index')->with('message', 'Se ha actualizado los datos correctamente.');
-                }
-            }
+            return view('home.index');
         }
-        return view('inicio')->with('message', 'Se ha actualizado los datos correctamente.');
     }
 
     public function edit($id)
